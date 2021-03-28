@@ -124,7 +124,7 @@ a:hover {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: #1e1f29;
   position: relative;
@@ -173,6 +173,14 @@ main h2 {
   line-height: 28px;
   color: white;
   font-size: 18px;
+  margin-bottom: 66px;
+}
+
+@media (min-width: 40em) {
+  main h2 {
+    font-size: 30px;
+    margin-bottom: 123px;
+  }
 }
 
 @media (min-width: 64em) {
@@ -180,6 +188,146 @@ main h2 {
     margin-top: 140px;
     font-size: 24px;
     letter-spacing: 10px;
+    margin-bottom: 111px;
+  }
+}
+
+main .container {
+  height: 66px;
+  width: 327px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 40em) {
+  main .container {
+    height: 130px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 64em) {
+  main .container {
+    height: 140px;
+    width: 750px;
+  }
+}
+
+main .container .item {
+  height: 70px;
+  width: 66px;
+  background: #34364f;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 12px 8px 0px #181a23;
+          box-shadow: 0px 12px 8px 0px #181a23;
+}
+
+@media (min-width: 40em) {
+  main .container .item {
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media (min-width: 64em) {
+  main .container .item {
+    height: 140px;
+    width: 148px;
+  }
+}
+
+main .container .item::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: #17171f;
+  position: absolute;
+  top: 47%;
+  left: -5px;
+  border-radius: 50%;
+}
+
+main .container .item::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: #17171f;
+  position: absolute;
+  top: 47%;
+  right: -5px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+main .container .item .topBackground {
+  height: 50%;
+  width: 100%;
+  background: #2c2c44;
+  border-bottom: 1px solid #2727416c;
+  position: relative;
+  overflow: hidden;
+}
+
+main .container .item .bottomBackground {
+  height: 50%;
+  width: 100%;
+  background: #34364f;
+  position: relative;
+  overflow: hidden;
+}
+
+main .container .item .time {
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #d1516f;
+}
+
+@media (min-width: 40em) {
+  main .container .item .time {
+    font-size: 68px;
+  }
+}
+
+@media (min-width: 64em) {
+  main .container .item .time {
+    font-size: 74px;
+  }
+}
+
+main .container .timeBox {
+  z-index: 20;
+  text-align: center;
+}
+
+main .container .timeBox .timeType {
+  margin-top: 30px;
+  color: #8888a2;
+  font-size: 12px;
+}
+
+@media (min-width: 40em) {
+  main .container .timeBox .timeType {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 64em) {
+  main .container .timeBox .timeType {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
