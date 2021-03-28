@@ -1,0 +1,16 @@
+main {
+  text-align: center;
+  h2 {
+    margin-top: 147px;
+    letter-spacing: 8px;
+    line-height: 28px;
+    color: $white;
+    font-size: 18px;
+
+    @include breapoint-up(large) {
+      margin-top: 140px;
+      font-size: 24px;
+      letter-spacing: 10px;
+    }
+  }
+}
