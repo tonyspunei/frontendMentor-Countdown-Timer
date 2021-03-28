@@ -167,6 +167,16 @@ main {
   text-align: center;
 }
 
+main .expired {
+  width: 100%;
+}
+
+main .expired h1 {
+  font-size: 70px;
+  margin: 0px;
+  color: #fb6087;
+}
+
 main h2 {
   margin-top: 147px;
   letter-spacing: 8px;

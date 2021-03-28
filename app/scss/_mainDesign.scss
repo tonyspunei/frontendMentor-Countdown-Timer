@@ -1,5 +1,14 @@
 main {
   text-align: center;
+
+  .expired {
+    width: 100%;
+    h1 {
+      font-size: 70px;
+      margin: 0px;
+      color: $softRed;
+    }
+  }
   h2 {
     margin-top: 147px;
     letter-spacing: 8px;
@@ -37,6 +46,9 @@ main {
     @include breapoint-up(large) {
       height: 140px;
       width: 750px;
+    }
+
+    .expired {
     }
 
     .item {
